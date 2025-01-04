@@ -8,7 +8,7 @@
     - install
     - install_fish
 
-- include: "{{ item }}"
+- include_tasks: "{{ item }}"
   with_first_found:
     - "configure_{{ ansible_pkg_mgr }}.yml"
     - "configure_default.yml"
